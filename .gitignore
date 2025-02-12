@@ -80,6 +80,7 @@ target/
 test.py/
 artifacts/
 dock.py/
+train2.ipynb_checkpoints/
 
 # IPython
 profile_default/
