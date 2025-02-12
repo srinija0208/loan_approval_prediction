@@ -37,7 +37,9 @@ def predict_datapoint():
         
         pred=predict_pipeline.predict(final_data)
         
-        result = str(pred[0])
+        # result = str(pred[0])
+        prediction_mapping = {"N": "No", "Y": "Yes"}
+        result = prediction_mapping.get(pred[0], pred[0])  # Default to original if not found in the mapping
         
         return render_template("result.html",final_result=result)
 
